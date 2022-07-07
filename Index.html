@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sparkathon</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrapper_1">
+<div class="leaderboard">
+  <header>
+    <h1>Leader Board</h1>
+
+    <nav>
+      <a class="tab_link active today_link" data-li="today">Today</a>
+      <a class="tab_link last7days_link"    data-li="last7days">Last 7 Days</a>
+      <a class="tab_link lastmonth_link"    data-li="lastmonth">Last Month</a>
+    </nav>
+  </header>
+  <div class="today_data tab_data demo" style="display:block ;">
+    <table id="table">
+      <thead>
+        <tr>
+          <th class="rank anim:update anim:number">Rank</th>
+          <th class="nick anim:id">Name</th>
+          <th class="sp anim:update anim:sort anim:number">Points</th>
+          <th class="anim:constant" style="display:none" >Vote</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="rank">1</td>
+          <td class="nick">Jitesh N.</td>
+          <td class="sp">98</td>
+          <td id="row_1_Up_Down" style="display:none ;"><span class="up" id="row_1_Up" >&uarr;</span> <span class="down" id="row_1_Down">&darr;</span></td>
+        </tr>
+        <tr>
+          <td class="rank">2</td>
+          <td class="nick">Rohit A.</td>
+          <td class="sp">95</td>
+          <td id="row_2_Up_Down" style="display:none ;"><span class="up" id="row_2_Up" >&uarr;</span> <span class="down" id="row_2_Down">&darr;</span></td>
+        </tr>
+        <tr>
+          <td class="rank">3</td>
+          <td class="nick">Pallav J</td>
+          <td class="sp">92</td>
+          <td id="row_3_Up_Down" style="display:none ;"><span class="up" id="row_3_Up" >&uarr;</span> <span class="down" id="row_3_Down">&darr;</span></td>
+        </tr>
+        <tr>
+          <td class="rank">4</td>
+          <td class="nick">Bhagyashree B.</td>
+          <td class="sp">90</td>
+          <td id="row_4_Up_Down" style="display:none ;"><span class="up" id="row_4_Up" >&uarr;</span> <span class="down" id="row_4_Down">&darr;</span></td>
+        </tr>
+        <tr>
+          <td class="rank">5</td>
+          <td class="nick">Nitin N. (You)</td>
+          <td class="sp">80</td>
+          <td id="row_5_Up_Down" style="display:none ;"><span class="up" id="row_5_Up" >&uarr;</span> <span class="down" id="row_5_Down">&darr;</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="last7day_data tab_data" style="display:none ;">
+    <table>
+      <thead>
+        <tr>
+          <th class="rank">Rank</th>
+          <th class="nick">Name</th>
+          <th class="sp">Points</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="rank">1</td>
+          <td class="nick">Nitin N.</td>
+          <td class="sp">98.00</td>
+        </tr>
+        <tr>
+          <td class="rank">2</td>
+          <td class="nick">Rohit A.</td>
+          <td class="sp">95.00</td>
+        </tr>
+        <tr>
+          <td class="rank">3</td>
+          <td class="nick">Pallav J</td>
+          <td class="sp">92.00</td>
+        </tr>
+        <tr>
+          <td class="rank">4</td>
+          <td class="nick">Bhagyashree B.</td>
+          <td class="sp">90.00</td>
+        </tr>
+        <tr>
+          <td class="rank">5</td>
+          <td class="nick">Last 7 days data</td>
+          <td class="sp">80.00</td>
+        </tr>
+      </tbody>
+    </table>
+    
+  </div>
+  <div class="lastmonth_data tab_data" style="display:none ;">
+    <table>
+      <thead>
+        <tr>
+          <th class="rank">Rank</th>
+          <th class="nick">Name</th>
+          <th class="sp">Points</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="rank">1</td>
+          <td class="nick">Nitin N.</td>
+          <td class="sp">98.00</td>
+        </tr>
+        <tr>
+          <td class="rank">2</td>
+          <td class="nick">Rohit A.</td>
+          <td class="sp">95.00</td>
+        </tr>
+        <tr>
+          <td class="rank">3</td>
+          <td class="nick">Pallav J</td>
+          <td class="sp">92.00</td>
+        </tr>
+        <tr>
+          <td class="rank">4</td>
+          <td class="nick">Bhagyashree B.</td>
+          <td class="sp">90.00</td>
+        </tr>
+        <tr>
+          <td class="rank">5</td>
+          <td class="nick">Monthly Data</td>
+          <td class="sp">80.00</td>
+        </tr>
+      </tbody>
+    </table>
+    
+  </div>
+</div>
+</div>	
+<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
