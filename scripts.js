@@ -30,20 +30,15 @@ tabs.forEach(function(tab){
 	})
 })
 
-setInterval ( "updateRowPosition()", 10000);
+setInterval ( "updateRowPosition()", 2000);
 
-var updateRowToggle = true;
 function updateRowPosition()
 {
-	if(updateRowPosition)
-	{
 		$("#row_5_Up").click()
-		$("#row_5_Up").click()
-	}else
-	{
-		$("#row_5_Down").click()
-	}
-	updateRowToggle= !updateRowToggle;
+		$("#row_8_Up").click()
+		$("#row_1_Up").click()
+		$("#row_3_Up").click()
+		$("#row_7_Up").click()
 }
 
 
@@ -57,13 +52,18 @@ function updateRowPosition()
 $(function() {
 	var updating = false;
   
+	function randomIntFromInterval(min, max) { // min and max included 
+		return Math.floor(Math.random() * (max - min + 1) + min)
+	  }
+	  
 	function voteClick(button, up, table) {
 	  if (!updating) {
 		updating = true;
 		$("html").trigger('startUpdate');
 		var cell = $('td:nth-child(3)', $(button).parent().parent());
-		if (up) cell.text((parseInt(cell.text()) + 5)); //add ajax
-		else cell.text((parseInt(cell.text()) - 2)); //add ajax etc here
+		var number = randomIntFromInterval(+2,-2)
+		if (up) cell.text((parseInt(cell.text()) + number)); //add ajax
+		else cell.text((parseInt(cell.text()) - number)); //add ajax etc here
 		sortTable(table, function() {
 		  updating = false;
 		  $("html").trigger('stopUpdate');
@@ -372,12 +372,12 @@ $(function() {
 	  //the function to use to extract the id value from a cell in the id column.
 	  animationSettings: {
 		up: {
-		  left: -25,
+		  //left: -25,
 		  // Move left
 		  backgroundColor: '#004400' // Dullish green
 		},
 		down: {
-		  left: 25,
+		  //left: 25,
 		  // Move right
 		  backgroundColor: '#550000' // Dullish red
 		},
