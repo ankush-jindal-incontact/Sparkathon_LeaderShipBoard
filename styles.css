@@ -16,6 +16,17 @@ box-shadow: 2px 2px 16px 1px #aaa;
 background-color: #16181e;
 
 }
+.avatar {
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.tab_data{
+  width: 70%;
+  margin-left: 150px;
+}
 .leaderboard_2
 {
   max-width: 25rem;
@@ -27,13 +38,13 @@ background-color: #16181e;
 
 }
 .leaderboard {
-  max-width: 25rem;
-  margin: 5rem auto;
+/*  max-width: 25rem;*/
+/*  margin: 5rem auto;*/
   border-radius: 1rem;
-  box-shadow: 2px 2px 16px 1px #aaa;
+/*  box-shadow: 2px 2px 16px 1px #aaa;*/
   font-family: sans-serif;
-  margin-bottom: 0px !Important;
-  margin-top: 20px !Important;
+/*  margin-bottom: 0px !Important;*/
+/*  margin-top: 20px !Important;*/
 }
 
 a {
@@ -45,8 +56,9 @@ header {
   background-color: #00aaff;
   color: white;
   text-transform: uppercase;
-  border-top-left-radius: 1rem;
+/*  border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
+*/  
   height: 14rem;
   position: relative;
 }
@@ -54,17 +66,11 @@ header {
 h1 {
   font-size: 3rem;
   line-height: 3rem;
-  position: absolute;
-  margin-left: 3rem;
+ /* position: absolute;
+  margin-left: 3rem;*/
   top: 4rem;
 }
 
-img {
-  height: 16rem;
-  position: absolute;
-  bottom: 0;
-  right: 1rem;
-}
 
 nav {
   width: 100%;
@@ -75,13 +81,17 @@ nav {
     to bottom,
     transparent,
     transparent 10%,
-    rgba(22, 22, 22, 0.5)
+   
   );
+  margin-left: 150px;
+
 }
 
 nav a {
   padding-top: 1rem;
   padding-bottom: 0.75rem;
+  padding-left: 1.75rem;  
+ 
   display: inline-block;
   font-weight: bold;
 }
@@ -110,9 +120,10 @@ table {
 }
 
 thead {
-  font-size: 0.7rem;
-  color: #555;
+  font-size: 0.9rem;
+  color: white;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 tbody .nick {
